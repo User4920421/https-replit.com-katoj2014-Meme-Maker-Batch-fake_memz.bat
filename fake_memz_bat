@@ -1,0 +1,364 @@
+@echo off
+title MEMZ
+color 0c
+mode con: cols=70 lines=40
+
+:: ============================================================
+::  FAKE MEMZ - THE EVERYTHING EDITION
+::  EVERY TECHNIQUE. ALL AT ONCE. 60 SECONDS OF CHAOS.
+::  VBScript loops x2, mshta x15, CMD spawner, title changer,
+::  mouse patterns x10, sound loops x10, balloons x12,
+::  PowerShell popups x20, browser tabs x15, apps x14
+::  100%% HARMLESS. ZERO FILES TOUCHED. EVER.
+:: ============================================================
+
+:: ============================================================
+::  WARNING SCREEN
+:: ============================================================
+cls
+color 0c
+echo.
+echo  ███████╗██╗   ██╗███████╗██████╗ ██╗   ██╗████████╗██╗  ██╗██╗███╗   ██╗ ██████╗
+echo  ██╔════╝██║   ██║██╔════╝██╔══██╗╚██╗ ██╔╝╚══██╔══╝██║  ██║██║████╗  ██║██╔════╝
+echo  █████╗  ██║   ██║█████╗  ██████╔╝ ╚████╔╝    ██║   ███████║██║██╔██╗ ██║██║  ███╗
+echo  ██╔══╝  ╚██╗ ██╔╝██╔══╝  ██╔══██╗  ╚██╔╝     ██║   ██╔══██║██║██║╚██╗██║██║   ██║
+echo  ███████╗ ╚████╔╝ ███████╗██║  ██║   ██║      ██║   ██║  ██║██║██║ ╚████║╚██████╔╝
+echo  ╚══════╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝
+echo.
+color 0e
+echo  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+echo  !!!!!!!!!!!!!!!!!!!  THE EVERYTHING EDITION  !!!!!!!!!!!!!!!!!!!!!
+echo  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+echo.
+color 0c
+echo   EVERY. SINGLE. THING. ALL AT ONCE.
+echo.
+echo   [x] 2 simultaneous VBScript popup loops (30 popups each)
+echo   [x] 15 mshta browser alerts fired at the exact same second
+echo   [x] CMD windows spawning every 2 seconds for 60 seconds
+echo   [x] Window title cycling 30 messages every 0.2 seconds
+echo   [x] 20+ PowerShell popups every 2-3 seconds
+echo   [x] 12 system tray balloon notifications
+echo   [x] 15 browser tabs opened instantly
+echo   [x] 14 app windows opened instantly
+echo   [x] 10 mouse movement patterns simultaneously
+echo   [x] 10 sound loops firing at the same time
+echo   [x] Everything overlapping everything else
+echo   [x] 100+ total popups over 60 seconds
+echo   [x] Zero files touched. Zero damage. Zero anything harmful.
+echo.
+color 0e
+echo  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+echo   THIS IS THE MOST HARMLESS CHAOS EVER PUT INTO A BATCH FILE
+echo  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+echo.
+color 07
+pause >nul
+
+:: ============================================================
+::  PRE-CHAOS POPUP GAUNTLET
+:: ============================================================
+powershell -command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('THE EVERYTHING EDITION' + [char]10 + [char]10 + 'You are about to experience the most popup-dense' + [char]10 + 'harmless batch file ever written.' + [char]10 + [char]10 + 'Two VBScript loops run simultaneously.' + [char]10 + '15 browser alerts fire at once.' + [char]10 + 'CMD windows keep spawning every 2 seconds.' + [char]10 + 'Your title bar goes absolutely insane.' + [char]10 + [char]10 + 'ZERO damage. ZERO files touched. Just chaos.', 'MEMZ - THE EVERYTHING EDITION', 'OKCancel', 'Warning')" >nul 2>&1
+
+echo MsgBox "LAST CHANCE WARNING" & Chr(10) & Chr(10) & "Two separate VBScript popup loops are loaded." & Chr(10) & "Each runs 30 sequential always-on-top popups." & Chr(10) & "They will run AT THE SAME TIME." & Chr(10) & Chr(10) & "You will be buried under popups from every direction." & Chr(10) & Chr(10) & "Your computer will survive. Probably.", 4096+16, "MEMZ Pre-Warning" > "%temp%\mpre.vbs"
+wscript "%temp%\mpre.vbs" >nul 2>&1
+
+powershell -command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('FINAL QUESTION' + [char]10 + [char]10 + 'Ready?' + [char]10 + [char]10 + '...Too bad. Clicking OK starts it.' + [char]10 + 'So does clicking Cancel actually.' + [char]10 + [char]10 + 'There was never a way out.', 'MEMZ - No Escape', 'OKCancel', 'Warning')" >nul 2>&1
+
+powershell -command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('JK AS ALWAYS!!!' + [char]10 + [char]10 + 'EVERYTHING IS HARMLESS.' + [char]10 + [char]10 + 'But it is about to get very very loud' + [char]10 + 'and very very chaotic.' + [char]10 + [char]10 + 'Brace. Yourself.', 'GOTCHA :D', 'OK', 'Information')" >nul 2>&1
+
+:: ============================================================
+::  BUILD ALL VBS FILES BEFORE FIRING
+:: ============================================================
+
+:: --- VBScript Loop A (30 popups - red theme) ---
+echo Dim a(29) > "%temp%\loopA.vbs"
+echo a(0)  = "[LOOP A - 1/30]  THE EVERYTHING EDITION HAS BEGUN." >> "%temp%\loopA.vbs"
+echo a(1)  = "[LOOP A - 2/30]  Two VBScript loops running at once right now." >> "%temp%\loopA.vbs"
+echo a(2)  = "[LOOP A - 3/30]  Loop B is also running. Simultaneously." >> "%temp%\loopA.vbs"
+echo a(3)  = "[LOOP A - 4/30]  15 mshta alerts already fired." >> "%temp%\loopA.vbs"
+echo a(4)  = "[LOOP A - 5/30]  CMD windows spawning every 2 seconds out there." >> "%temp%\loopA.vbs"
+echo a(5)  = "[LOOP A - 6/30]  Your title bar is cycling through 30 messages." >> "%temp%\loopA.vbs"
+echo a(6)  = "[LOOP A - 7/30]  15 browser tabs are open right now." >> "%temp%\loopA.vbs"
+echo a(7)  = "[LOOP A - 8/30]  Two of them are Rick Astley. You got double rolled." >> "%temp%\loopA.vbs"
+echo a(8)  = "[LOOP A - 9/30]  10 mouse movement patterns are running simultaneously." >> "%temp%\loopA.vbs"
+echo a(9)  = "[LOOP A - 10/30] Halfway through Loop A. Loop B is ahead of you." >> "%temp%\loopA.vbs"
+echo a(10) = "[LOOP A - 11/30] 10 sound loops are playing right now. All at once." >> "%temp%\loopA.vbs"
+echo a(11) = "[LOOP A - 12/30] Your mouse is spinning in circles as you read this." >> "%temp%\loopA.vbs"
+echo a(12) = "[LOOP A - 13/30] System tray has fired 4 balloon notifications already." >> "%temp%\loopA.vbs"
+echo a(13) = "[LOOP A - 14/30] Zero files touched. Zero damage. All chaos is fake." >> "%temp%\loopA.vbs"
+echo a(14) = "[LOOP A - 15/30] You are halfway. Loop B is also at roughly halfway." >> "%temp%\loopA.vbs"
+echo a(15) = "[LOOP A - 16/30] PowerShell popups are firing every 2-3 seconds too." >> "%temp%\loopA.vbs"
+echo a(16) = "[LOOP A - 17/30] There are 14 app windows open on your screen." >> "%temp%\loopA.vbs"
+echo a(17) = "[LOOP A - 18/30] The CMD spawner has opened about 9 CMD windows by now." >> "%temp%\loopA.vbs"
+echo a(18) = "[LOOP A - 19/30] Your mouse just traced a figure-8 while you read this." >> "%temp%\loopA.vbs"
+echo a(19) = "[LOOP A - 20/30] 2/3 through Loop A. Well done." >> "%temp%\loopA.vbs"
+echo a(20) = "[LOOP A - 21/30] The sounds have been going for a while now." >> "%temp%\loopA.vbs"
+echo a(21) = "[LOOP A - 22/30] Your PC is handling this like a champion." >> "%temp%\loopA.vbs"
+echo a(22) = "[LOOP A - 23/30] Still zero damage. Still zero files touched." >> "%temp%\loopA.vbs"
+echo a(23) = "[LOOP A - 24/30] 6 more after this. You are nearly free." >> "%temp%\loopA.vbs"
+echo a(24) = "[LOOP A - 25/30] 5 more. The chaos outside is winding down." >> "%temp%\loopA.vbs"
+echo a(25) = "[LOOP A - 26/30] 4 more. Almost done with this loop." >> "%temp%\loopA.vbs"
+echo a(26) = "[LOOP A - 27/30] 3 more. Loop B might already be finished." >> "%temp%\loopA.vbs"
+echo a(27) = "[LOOP A - 28/30] 2 more. The grand finale popup is coming at 60s." >> "%temp%\loopA.vbs"
+echo a(28) = "[LOOP A - 29/30] Last one coming up. You survived Loop A." >> "%temp%\loopA.vbs"
+echo a(29) = "[LOOP A - 30/30] LOOP A COMPLETE!" & Chr(10) & Chr(10) & "You clicked through 30 always-on-top popups." & Chr(10) & "Loop B may still be running next door." & Chr(10) & Chr(10) & "Your PC: still 100% fine :)" >> "%temp%\loopA.vbs"
+echo Dim i >> "%temp%\loopA.vbs"
+echo For i = 0 To 29 >> "%temp%\loopA.vbs"
+echo   MsgBox a(i), 4096+16, "MEMZ LOOP A" >> "%temp%\loopA.vbs"
+echo Next >> "%temp%\loopA.vbs"
+
+:: --- VBScript Loop B (30 popups - different messages) ---
+echo Dim b(29) > "%temp%\loopB.vbs"
+echo b(0)  = "[LOOP B - 1/30]  Loop B checking in. Loop A is also running." >> "%temp%\loopB.vbs"
+echo b(1)  = "[LOOP B - 2/30]  Yes both loops run at the same time." >> "%temp%\loopB.vbs"
+echo b(2)  = "[LOOP B - 3/30]  You have to click through both of us." >> "%temp%\loopB.vbs"
+echo b(3)  = "[LOOP B - 4/30]  While also closing the mshta alerts." >> "%temp%\loopB.vbs"
+echo b(4)  = "[LOOP B - 5/30]  And the PowerShell popups." >> "%temp%\loopB.vbs"
+echo b(5)  = "[LOOP B - 6/30]  And the VBScript individual popups." >> "%temp%\loopB.vbs"
+echo b(6)  = "[LOOP B - 7/30]  Good luck. You will need it." >> "%temp%\loopB.vbs"
+echo b(7)  = "[LOOP B - 8/30]  Your browser probably has 15 tabs open." >> "%temp%\loopB.vbs"
+echo b(8)  = "[LOOP B - 9/30]  Your mouse is also completely feral right now." >> "%temp%\loopB.vbs"
+echo b(9)  = "[LOOP B - 10/30] Halfway through Loop B. Loop A is around 10 too." >> "%temp%\loopB.vbs"
+echo b(10) = "[LOOP B - 11/30] The sounds playing right now are absolutely unhinged." >> "%temp%\loopB.vbs"
+echo b(11) = "[LOOP B - 12/30] 10 sound loops. All simultaneously. All different." >> "%temp%\loopB.vbs"
+echo b(12) = "[LOOP B - 13/30] Your window title has changed about 200 times by now." >> "%temp%\loopB.vbs"
+echo b(13) = "[LOOP B - 14/30] New CMD windows are still spawning every 2 seconds." >> "%temp%\loopB.vbs"
+echo b(14) = "[LOOP B - 15/30] Halfway. Your computer is still completely fine." >> "%temp%\loopB.vbs"
+echo b(15) = "[LOOP B - 16/30] Zero files were touched. We checked. Still zero." >> "%temp%\loopB.vbs"
+echo b(16) = "[LOOP B - 17/30] The balloon notifications are still firing from tray." >> "%temp%\loopB.vbs"
+echo b(17) = "[LOOP B - 18/30] 12 app windows were opened. They are just sitting there." >> "%temp%\loopB.vbs"
+echo b(18) = "[LOOP B - 19/30] Notepad and Calculator are probably confused." >> "%temp%\loopB.vbs"
+echo b(19) = "[LOOP B - 20/30] 2/3 through Loop B. Respect." >> "%temp%\loopB.vbs"
+echo b(20) = "[LOOP B - 21/30] The mouse just did another spiral pattern." >> "%temp%\loopB.vbs"
+echo b(21) = "[LOOP B - 22/30] 8 more PowerShell popups still queued outside." >> "%temp%\loopB.vbs"
+echo b(22) = "[LOOP B - 23/30] Still harmless. Still zero damage. Always was." >> "%temp%\loopB.vbs"
+echo b(23) = "[LOOP B - 24/30] 6 more. The end of Loop B approaches." >> "%temp%\loopB.vbs"
+echo b(24) = "[LOOP B - 25/30] 5 more. Grand finale popup fires at 60 seconds." >> "%temp%\loopB.vbs"
+echo b(25) = "[LOOP B - 26/30] 4 more. You have been incredibly patient." >> "%temp%\loopB.vbs"
+echo b(26) = "[LOOP B - 27/30] 3 more. Loop A is probably done by now." >> "%temp%\loopB.vbs"
+echo b(27) = "[LOOP B - 28/30] 2 more. Almost free from the popup prison." >> "%temp%\loopB.vbs"
+echo b(28) = "[LOOP B - 29/30] Last one after this. For real this time." >> "%temp%\loopB.vbs"
+echo b(29) = "[LOOP B - 30/30] LOOP B COMPLETE!" & Chr(10) & Chr(10) & "Both loops are now done." & Chr(10) & "60 sequential always-on-top popups total." & Chr(10) & Chr(10) & "The rest of the chaos may still be going." & Chr(10) & "Your PC is perfectly fine. Always was. :)" >> "%temp%\loopB.vbs"
+echo Dim j >> "%temp%\loopB.vbs"
+echo For j = 0 To 29 >> "%temp%\loopB.vbs"
+echo   MsgBox b(j), 4096+48, "MEMZ LOOP B" >> "%temp%\loopB.vbs"
+echo Next >> "%temp%\loopB.vbs"
+
+:: --- Individual VBScript bombs (staggered throughout) ---
+echo MsgBox "ERROR 0xMEMZFFFF" & Chr(10) & Chr(10) & "Too many popups to display error about popups." & Chr(10) & "Displaying it anyway.", 4096+16, "MEMZ System" > "%temp%\v1.vbs"
+echo MsgBox "Your mouse is currently feral." & Chr(10) & Chr(10) & "Last seen: somewhere random on your screen." & Chr(10) & "Do not attempt to catch it. Just wait.", 4096+48, "MEMZ Mouse Dept" > "%temp%\v2.vbs"
+echo MsgBox "RICK ROLL CONFIRMATION" & Chr(10) & Chr(10) & "You have been double Rick Rolled." & Chr(10) & "Two separate YouTube tabs. Both Rick." & Chr(10) & Chr(10) & "This is a certified achievement.", 4096+64, "MEMZ Hall of Fame" > "%temp%\v3.vbs"
+echo MsgBox "QUEUE STATUS: Full." & Chr(10) & Chr(10) & "Current popup backlog: enormous." & Chr(10) & "Estimated time to clear: depends on you." & Chr(10) & Chr(10) & "Thank you for your patience.", 4096+48, "MEMZ Queue" > "%temp%\v4.vbs"
+echo MsgBox "SOUND REPORT:" & Chr(10) & Chr(10) & "10 loops playing simultaneously." & Chr(10) & "Beeps, chords, system sounds, alarms." & Chr(10) & Chr(10) & "All harmless. All very loud.", 4096+16, "MEMZ Audio" > "%temp%\v5.vbs"
+echo MsgBox "HR NOTICE:" & Chr(10) & Chr(10) & "Your mouse filed a complaint." & Chr(10) & "It cited: excessive frenzy, unauthorized circles," & Chr(10) & "and an unexpected spiral pattern." & Chr(10) & Chr(10) & "Complaint acknowledged. Chaos continues.", 4096+64, "MEMZ HR" > "%temp%\v6.vbs"
+echo MsgBox "FUN FACT:" & Chr(10) & Chr(10) & "This batch file has more popup types" & Chr(10) & "than most antivirus companies have seen." & Chr(10) & Chr(10) & "And it does zero damage. Iconic.", 4096+64, "MEMZ Facts" > "%temp%\v7.vbs"
+echo MsgBox "SECURITY AUDIT COMPLETE:" & Chr(10) & Chr(10) & "Files deleted:    0" & Chr(10) & "Data stolen:      0" & Chr(10) & "Damage caused:    none" & Chr(10) & "Popups shown:     a lot" & Chr(10) & Chr(10) & "Status: all clear. Just chaos.", 4096+64, "MEMZ Security" > "%temp%\v8.vbs"
+echo MsgBox "CMD SPAWNER STATUS:" & Chr(10) & Chr(10) & "A new CMD window has appeared." & Chr(10) & "This has been happening every 2 seconds." & Chr(10) & Chr(10) & "It will keep happening.", 4096+48, "MEMZ Spawner" > "%temp%\v9.vbs"
+echo MsgBox "FINAL MINUTE:" & Chr(10) & Chr(10) & "The chaos is in its final stretch." & Chr(10) & "The sounds will stop soon." & Chr(10) & "The mouse will calm down soon." & Chr(10) & Chr(10) & "The popups? Still a few more. Sorry.", 4096+48, "MEMZ Finale Warning" > "%temp%\v10.vbs"
+
+:: ============================================================
+::  FIRE ABSOLUTELY EVERYTHING INSTANTLY
+:: ============================================================
+
+:: ---- BROWSER - 15 TABS AT ONCE ----
+start https://www.google.com/search?q=you+got+fake+memzd+the+everything+edition
+start https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start https://www.google.com/search?q=how+do+i+close+100+popups+at+once
+start https://www.google.com/search?q=why+is+my+mouse+doing+circles+right+now
+start https://www.bing.com/search?q=popup+apocalypse+help+me+right+now
+start https://www.google.com/search?q=fake+memz+everything+edition+batch
+start https://www.youtube.com/watch?v=dQw4w9WgXcQ
+start https://www.google.com/search?q=two+vbscript+loops+at+the+same+time
+start https://www.google.com/search?q=this+is+fine+dog+everything+is+fine
+start https://www.google.com/search?q=my+title+bar+is+going+crazy+batch+file
+start https://www.google.com/search?q=cmd+windows+keep+spawning+prank
+start https://www.google.com/search?q=harmless+chaos+batch+file+prank
+start https://www.google.com/search?q=10+sound+loops+at+once+windows
+start https://www.google.com/search?q=fake+memz+is+it+safe+yes+it+is
+start https://www.google.com/search?q=i+survived+100+popups+at+once
+
+:: ---- FIRE BOTH VBSCRIPT LOOPS SIMULTANEOUSLY ----
+start /b wscript "%temp%\loopA.vbs"
+start /b wscript "%temp%\loopB.vbs"
+
+:: ---- MSHTA ALERT BOMB - 15 AT THE EXACT SAME MOMENT ----
+start /b mshta "javascript:alert('MEMZ ALERT 1/15\n\nAll 15 fired at the same time.\nClose this. 14 more are waiting.\n\nZero damage. Total chaos.');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 2/15\n\nTwo VBScript loops are also running.\n30 popups each. Simultaneously.\n\nYou have a lot of clicking to do.');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 3/15\n\nYour mouse is completely feral.\nSpinning. Frenzying. Figure-8ing.\nSpiraling. All at once.\n\nHarmless.');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 4/15\n\n15 browser tabs are open.\nTwo of them are Rick Astley.\nYou got double Rick Rolled.\n\nCongratulations.');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 5/15\n\n10 sound loops firing simultaneously.\nBeeps. Chords. Alarms. System sounds.\nAll at once.\n\nYour speakers are doing their best.');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 6/15\n\nCMD windows are spawning every 2 seconds.\nThey will keep spawning for 60 seconds.\n\nGood luck with all that.');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 7/15\n\nHalfway through the alert bomb.\n\nYour window title is changing\nevery 0.2 seconds right now.\nCheck the taskbar.');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 8/15\n\n14 app windows opened instantly.\nNotepad. Calculator. Paint.\nWordPad. And many more.\n\nAll harmless. Just messy.');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 9/15\n\nSystem tray balloons are also firing.\n12 of them throughout the chaos.\nCheck bottom-right corner.\n\nSo many notifications.');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 10/15\n\nFun fact: this is all one batch file.\nNo executables. No installs.\nJust .bat code.\n\nRespect the chaos.');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 11/15\n\n20+ PowerShell popups queued.\nFiring every 2-3 seconds.\n\nYou will be seeing popups for a while.');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 12/15\n\nThis has been 100%% harmless.\nNo files touched. No damage.\nNo pizzas ordered.\n\nJust pure chaos.');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 13/15\n\nAlmost through the alert bomb.\n2 more after this.\n\nThe VBScript loops are still going though.\nLoop A and Loop B. Still clicking?');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 14/15\n\nOne more alert after this.\n\nThen the PowerShell ones.\nThen the VBScript individual ones.\nThen the loops. So many loops.');close()"
+start /b mshta "javascript:alert('MEMZ ALERT 15/15\n\nAll 15 browser alerts deployed!\n\nYou survived the alert bomb.\nNow close Loop A and Loop B.\nAnd the balloons. And everything else.\n\nGood luck :)');close()"
+
+:: ---- MOUSE PATTERNS - ALL 10 FIRING AT ONCE ----
+start /b powershell -WindowStyle Hidden -command "Add-Type -AssemblyName System.Windows.Forms; $rng=New-Object System.Random; for($i=0;$i -lt 800;$i++){[System.Windows.Forms.Cursor]::Position=New-Object System.Drawing.Point($rng.Next(0,1900),$rng.Next(0,1060));Start-Sleep -Milliseconds 8}"
+start /b powershell -WindowStyle Hidden -command "Add-Type -AssemblyName System.Windows.Forms; for($r=0;$r -lt 25;$r++){for($i=0;$i -lt 36;$i++){$a=[math]::PI*2*$i/36;$x=[int](960+500*[math]::Cos($a));$y=[int](540+350*[math]::Sin($a));[System.Windows.Forms.Cursor]::Position=New-Object System.Drawing.Point($x,$y);Start-Sleep -Milliseconds 18}}"
+start /b powershell -WindowStyle Hidden -command "Add-Type -AssemblyName System.Windows.Forms; Start-Sleep -m 200; for($r=0;$r -lt 18;$r++){for($i=0;$i -lt 60;$i++){$a=[math]::PI*2*$i/60;$x=[int](960+400*[math]::Sin($a));$y=[int](540+200*[math]::Sin(2*$a));[System.Windows.Forms.Cursor]::Position=New-Object System.Drawing.Point($x,$y);Start-Sleep -Milliseconds 12}}"
+start /b powershell -WindowStyle Hidden -command "Add-Type -AssemblyName System.Windows.Forms; Start-Sleep -m 2000; $pts=@((0,0),(1900,0),(1900,1060),(0,1060),(960,0),(0,540),(1900,540),(960,1060),(0,0),(1900,0),(0,1060),(1900,1060),(0,0),(960,540)); foreach($p in $pts){[System.Windows.Forms.Cursor]::Position=New-Object System.Drawing.Point($p[0],$p[1]);Start-Sleep -m 100}"
+start /b powershell -WindowStyle Hidden -command "Add-Type -AssemblyName System.Windows.Forms; Start-Sleep -m 8000; for($i=0;$i -lt 350;$i++){$a=$i*0.18;$r=$i*2.5;$x=[int](960+$r*[math]::Cos($a));$y=[int](540+$r*[math]::Sin($a));if($x -lt 30){$x=30};if($x -gt 1870){$x=1870};if($y -lt 30){$y=30};if($y -gt 1030){$y=1030};[System.Windows.Forms.Cursor]::Position=New-Object System.Drawing.Point($x,$y);Start-Sleep -m 12}"
+start /b powershell -WindowStyle Hidden -command "Add-Type -AssemblyName System.Windows.Forms; Start-Sleep -m 15000; $rng=New-Object System.Random; for($i=0;$i -lt 500;$i++){[System.Windows.Forms.Cursor]::Position=New-Object System.Drawing.Point($rng.Next(0,1900),$rng.Next(0,1060));Start-Sleep -m 7}"
+start /b powershell -WindowStyle Hidden -command "Add-Type -AssemblyName System.Windows.Forms; Start-Sleep -m 24000; for($r=0;$r -lt 10;$r++){for($i=0;$i -lt 36;$i++){$a=[math]::PI*2*$i/36;$x=[int](960+($r+1)*50*[math]::Cos($a));$y=[int](540+($r+1)*35*[math]::Sin($a));[System.Windows.Forms.Cursor]::Position=New-Object System.Drawing.Point($x,$y);Start-Sleep -m 15}}"
+start /b powershell -WindowStyle Hidden -command "Add-Type -AssemblyName System.Windows.Forms; Start-Sleep -m 33000; $rng=New-Object System.Random; for($i=0;$i -lt 400;$i++){[System.Windows.Forms.Cursor]::Position=New-Object System.Drawing.Point($rng.Next(0,1900),$rng.Next(0,1060));Start-Sleep -m 8}"
+start /b powershell -WindowStyle Hidden -command "Add-Type -AssemblyName System.Windows.Forms; Start-Sleep -m 43000; for($i=0;$i -lt 200;$i++){$x=[int](960+900*[math]::Sin($i*0.15));$y=[int](540+500*[math]::Cos($i*0.23));if($x -lt 0){$x=0};if($x -gt 1900){$x=1900};if($y -lt 0){$y=0};if($y -gt 1060){$y=1060};[System.Windows.Forms.Cursor]::Position=New-Object System.Drawing.Point($x,$y);Start-Sleep -m 20}"
+start /b powershell -WindowStyle Hidden -command "Add-Type -AssemblyName System.Windows.Forms; Start-Sleep -m 52000; $rng=New-Object System.Random; for($i=0;$i -lt 150;$i++){[System.Windows.Forms.Cursor]::Position=New-Object System.Drawing.Point($rng.Next(0,1900),$rng.Next(0,1060));Start-Sleep -m 10}; [System.Windows.Forms.Cursor]::Position=New-Object System.Drawing.Point(960,540)"
+
+:: ---- TITLE CHANGER - 30 MESSAGES EVERY 0.2 SECONDS ----
+start /b powershell -WindowStyle Hidden -command "$t=@('MEMZ','POPUP APOCALYPSE','LOOP A RUNNING','LOOP B RUNNING','YOUR MOUSE IS MINE','15 TABS OPEN','DOUBLE RICK ROLLED','CMD SPAWNING...','10 SOUNDS AT ONCE','HELP','THIS IS FINE','ZERO DAMAGE THOUGH','100+ POPUPS INCOMING','TITLE BAR HACKED','FRENZY WAVE ACTIVE','SPIRAL PATTERN GO','FIGURE 8 MODE','CIRCLE SPIN ON','BALLOON INCOMING','CHECK YOUR TRAY','STILL HARMLESS','STILL GOING...','ALMOST DONE','NOT REALLY','60 SECONDS TOTAL','GRAND FINALE SOON','BRACE YOURSELF','JK LOL','GET PRANKED','LMAOOO'); for($i=0;$i -lt 1500;$i++){$host.ui.RawUI.WindowTitle=$t[$i % $t.Length];Start-Sleep -m 200}"
+
+:: ---- 10 SOUND LOOPS ALL AT ONCE ----
+start /b powershell -WindowStyle Hidden -command "for($i=0;$i -lt 150;$i++){[System.Media.SystemSounds]::Hand.Play();Start-Sleep -m 200;[System.Media.SystemSounds]::Exclamation.Play();Start-Sleep -m 200}"
+start /b powershell -WindowStyle Hidden -command "for($i=0;$i -lt 200;$i++){[console]::Beep((Get-Random -Min 80 -Max 2500),55)}"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 300; for($i=0;$i -lt 30;$i++){[console]::Beep(200,55);[console]::Beep(400,55);[console]::Beep(800,55);[console]::Beep(1600,55);[console]::Beep(3200,55);[console]::Beep(1600,55);[console]::Beep(800,55);[console]::Beep(400,55);[console]::Beep(200,80);Start-Sleep -m 50}"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 600; for($i=0;$i -lt 25;$i++){[System.Media.SystemSounds]::Asterisk.Play();Start-Sleep -m 250;[System.Media.SystemSounds]::Question.Play();Start-Sleep -m 250}"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 900; for($i=0;$i -lt 20;$i++){[console]::Beep(523,110);[console]::Beep(659,110);[console]::Beep(784,110);[console]::Beep(1047,250);[console]::Beep(784,110);[console]::Beep(659,110);[console]::Beep(523,250);Start-Sleep -m 150}"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 1200; for($i=0;$i -lt 200;$i++){[console]::Beep((Get-Random -Min 80 -Max 2500),45)}"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 10000; for($i=0;$i -lt 15;$i++){[console]::Beep(523,120);[console]::Beep(523,120);[console]::Beep(523,120);[console]::Beep(415,350);[console]::Beep(622,120);[console]::Beep(523,350);[console]::Beep(415,120);[console]::Beep(622,650);Start-Sleep -m 200}"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 22000; for($i=0;$i -lt 150;$i++){[console]::Beep((Get-Random -Min 80 -Max 2500),50)}"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 38000; for($i=0;$i -lt 120;$i++){[console]::Beep((Get-Random -Min 80 -Max 2500),55)}"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 52000; [System.Media.SystemSounds]::Asterisk.Play();Start-Sleep -m 300;[System.Media.SystemSounds]::Question.Play();Start-Sleep -m 300;[System.Media.SystemSounds]::Exclamation.Play();Start-Sleep -m 300;[System.Media.SystemSounds]::Hand.Play();Start-Sleep -m 300;[System.Media.SystemSounds]::Asterisk.Play()"
+
+:: ---- 14 APPS OPENED INSTANTLY ----
+start notepad
+start calc
+start mspaint
+start write
+start winver
+start charmap
+start osk
+start snippingtool
+start cmd /k "color 0c && echo [MEMZ CORE] EVERYTHING EDITION ACTIVE && echo [MEMZ CORE] 2 loops. 15 alerts. 10 sounds. 10 mouse patterns. && echo [MEMZ CORE] All at once. All harmless. && pause"
+start cmd /k "color 0a && echo [HACKER.EXE] found 0 interesting files && echo [HACKER.EXE] checked twice. still 0. && echo [HACKER.EXE] ur meme folder was the scariest thing && pause"
+start cmd /k "color 0e && echo [VIRUS.EXE] upload failed. ur data too boring. && echo [VIRUS.EXE] we tried 4 times. still boring. && echo [VIRUS.EXE] 0 bytes sent. && pause"
+start cmd /k "color 0d && echo [RANSOMWARE.EXE] encrypted: 0 files && echo [RANSOMWARE.EXE] ransom demand: $0.00 && echo [RANSOMWARE.EXE] just close these windows please && pause"
+start cmd /k "color 0b && echo [SPYWARE.EXE] webcam check: you look confused && echo [SPYWARE.EXE] understandable given the popups && echo [SPYWARE.EXE] (we cant actually see you. promise.) && pause"
+start cmd /k "color 09 && echo [ROOTKIT.EXE] looked at system32. too scary. left. && echo [ROOTKIT.EXE] hiding in temp folder instead && echo [ROOTKIT.EXE] dont tell anyone && pause"
+
+:: ---- CMD SPAWNER - NEW WINDOW EVERY 2 SECONDS FOR 60 SECONDS ----
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 3000;  Start-Process cmd -ArgumentList '/k color 0c && echo [SPAWN 1]  3 seconds in. CMD spawner activated. Every 2s. && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 5000;  Start-Process cmd -ArgumentList '/k color 09 && echo [SPAWN 2]  5 seconds. Another one. && echo [SPAWN 2]  Loop A and B still clicking? && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 7000;  Start-Process cmd -ArgumentList '/k color 0e && echo [SPAWN 3]  7 seconds. Still spawning. && echo [SPAWN 3]  15 alert dialogs already closed? && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 9000;  Start-Process cmd -ArgumentList '/k color 0d && echo [SPAWN 4]  9 seconds. More CMD. && echo [SPAWN 4]  Mouse is spinning in circles outside. && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 12000; Start-Process cmd -ArgumentList '/k color 0b && echo [SPAWN 5]  12 seconds. Window title still changing. && echo [SPAWN 5]  10 sounds still playing. && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 15000; Start-Process cmd -ArgumentList '/k color 06 && echo [SPAWN 6]  15 seconds. Still here. Still spawning. && echo [SPAWN 6]  Your PC is handling this well. && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 18000; Start-Process cmd -ArgumentList '/k color 0c && echo [SPAWN 7]  18 seconds. Spiral pattern running now. && echo [SPAWN 7]  Check your mouse. It is doing art. && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 22000; Start-Process cmd -ArgumentList '/k color 05 && echo [SPAWN 8]  22 seconds. Halfway through spawner. && echo [SPAWN 8]  Still zero damage. Promise. && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 26000; Start-Process cmd -ArgumentList '/k color 0e && echo [SPAWN 9]  26 seconds. Nonstop. && echo [SPAWN 9]  Grand finale popup coming at 60s. && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 30000; Start-Process cmd -ArgumentList '/k color 0a && echo [SPAWN 10] 30 seconds. Half a minute of chaos. && echo [SPAWN 10] Your computer: still fine. && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 34000; Start-Process cmd -ArgumentList '/k color 09 && echo [SPAWN 11] 34 seconds. More mouse frenzy wave active. && echo [SPAWN 11] Sounds still rolling. && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 38000; Start-Process cmd -ArgumentList '/k color 0d && echo [SPAWN 12] 38 seconds. Winding toward the end. && echo [SPAWN 12] But not quite there yet. && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 43000; Start-Process cmd -ArgumentList '/k color 0b && echo [SPAWN 13] 43 seconds. Lissajous curve mouse pattern active. && echo [SPAWN 13] Very fancy. Very harmless. && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 48000; Start-Process cmd -ArgumentList '/k color 06 && echo [SPAWN 14] 48 seconds. Almost done. && echo [SPAWN 14] Final CMD spawn coming in 12 seconds. && pause'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 54000; Start-Process cmd -ArgumentList '/k color 0c && echo [SPAWN 15] 54 seconds. Last CMD window. && echo [SPAWN 15] Grand finale popup in 6 seconds. && echo [SPAWN 15] Your computer: PERFECTLY FINE THE WHOLE TIME. && pause'"
+
+:: ---- 12 SYSTEM TRAY BALLOONS ----
+start /b powershell -WindowStyle Hidden -command "Add-Type -AssemblyName System.Windows.Forms; $n=New-Object System.Windows.Forms.NotifyIcon; $n.Icon=[System.Drawing.SystemIcons]::Warning; $n.Visible=$true; $n.ShowBalloonTip(4000,'MEMZ ACTIVATED','Everything edition live. 2 loops. 15 alerts. 10 patterns. All at once.','Warning'); Start-Sleep 6; $n.Visible=$false"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 2000; Add-Type -AssemblyName System.Windows.Forms; $n=New-Object System.Windows.Forms.NotifyIcon; $n.Icon=[System.Drawing.SystemIcons]::Error; $n.Visible=$true; $n.ShowBalloonTip(4000,'MEMZ ERROR','Too many popups. Displaying more popups about the too many popups.','Error'); Start-Sleep 6; $n.Visible=$false"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 5000; Add-Type -AssemblyName System.Windows.Forms; $n=New-Object System.Windows.Forms.NotifyIcon; $n.Icon=[System.Drawing.SystemIcons]::Warning; $n.Visible=$true; $n.ShowBalloonTip(4000,'MEMZ Update','CMD spawner active. Mouse doing circles. Sounds at max. Still harmless.','Warning'); Start-Sleep 6; $n.Visible=$false"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 9000; Add-Type -AssemblyName System.Windows.Forms; $n=New-Object System.Windows.Forms.NotifyIcon; $n.Icon=[System.Drawing.SystemIcons]::Information; $n.Visible=$true; $n.ShowBalloonTip(4000,'MEMZ Fun Fact','You have been double Rick Rolled. Both tabs are Rick Astley. Iconic.','Info'); Start-Sleep 6; $n.Visible=$false"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 13000; Add-Type -AssemblyName System.Windows.Forms; $n=New-Object System.Windows.Forms.NotifyIcon; $n.Icon=[System.Drawing.SystemIcons]::Warning; $n.Visible=$true; $n.ShowBalloonTip(4000,'MEMZ Spiral','Mouse is now doing a spiral outward pattern. Very artistic.','Warning'); Start-Sleep 6; $n.Visible=$false"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 18000; Add-Type -AssemblyName System.Windows.Forms; $n=New-Object System.Windows.Forms.NotifyIcon; $n.Icon=[System.Drawing.SystemIcons]::Information; $n.Visible=$true; $n.ShowBalloonTip(4000,'MEMZ Status','18 seconds in. All chaos still active. PC still fine. Still harmless.','Info'); Start-Sleep 6; $n.Visible=$false"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 24000; Add-Type -AssemblyName System.Windows.Forms; $n=New-Object System.Windows.Forms.NotifyIcon; $n.Icon=[System.Drawing.SystemIcons]::Warning; $n.Visible=$true; $n.ShowBalloonTip(4000,'MEMZ Concentric','Mouse now tracing concentric circles. Getting fancier.','Warning'); Start-Sleep 6; $n.Visible=$false"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 30000; Add-Type -AssemblyName System.Windows.Forms; $n=New-Object System.Windows.Forms.NotifyIcon; $n.Icon=[System.Drawing.SystemIcons]::Information; $n.Visible=$true; $n.ShowBalloonTip(4000,'MEMZ Halfway','30 seconds done. Half the chaos complete. PC: still perfect.','Info'); Start-Sleep 6; $n.Visible=$false"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 38000; Add-Type -AssemblyName System.Windows.Forms; $n=New-Object System.Windows.Forms.NotifyIcon; $n.Icon=[System.Drawing.SystemIcons]::Warning; $n.Visible=$true; $n.ShowBalloonTip(4000,'MEMZ Winding','38 seconds. Still going. Sounds still rolling. Mouse still active.','Warning'); Start-Sleep 6; $n.Visible=$false"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 44000; Add-Type -AssemblyName System.Windows.Forms; $n=New-Object System.Windows.Forms.NotifyIcon; $n.Icon=[System.Drawing.SystemIcons]::Information; $n.Visible=$true; $n.ShowBalloonTip(4000,'MEMZ Lissajous','Mouse doing Lissajous curve. We got mathematical.','Info'); Start-Sleep 6; $n.Visible=$false"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 52000; Add-Type -AssemblyName System.Windows.Forms; $n=New-Object System.Windows.Forms.NotifyIcon; $n.Icon=[System.Drawing.SystemIcons]::Information; $n.Visible=$true; $n.ShowBalloonTip(4000,'MEMZ Almost Done','52 seconds. Almost over. Grand finale popup at 60 seconds.','Info'); Start-Sleep 6; $n.Visible=$false"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 62000; Add-Type -AssemblyName System.Windows.Forms; $n=New-Object System.Windows.Forms.NotifyIcon; $n.Icon=[System.Drawing.SystemIcons]::Information; $n.Visible=$true; $n.ShowBalloonTip(6000,'MEMZ DONE','Chaos complete! PC is totally fine. Close everything. Hope you laughed!','Info'); Start-Sleep 8; $n.Visible=$false"
+
+:: ---- STAGGERED VBSCRIPT INDIVIDUAL BOMBS ----
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 4000;  wscript '%temp%\v1.vbs'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 8000;  wscript '%temp%\v2.vbs'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 12000; wscript '%temp%\v3.vbs'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 16000; wscript '%temp%\v4.vbs'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 20000; wscript '%temp%\v5.vbs'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 25000; wscript '%temp%\v6.vbs'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 30000; wscript '%temp%\v7.vbs'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 35000; wscript '%temp%\v8.vbs'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 40000; wscript '%temp%\v9.vbs'"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 47000; wscript '%temp%\v10.vbs'"
+
+:: ---- STAGGERED POWERSHELL POPUPS (every 2-3 seconds) ----
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 2500;  Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('THE EVERYTHING EDITION IS LIVE' + [char]10 + [char]10 + 'Right now simultaneously:' + [char]10 + '  2 VBScript loops (30 popups each)' + [char]10 + '  15 mshta alerts already fired' + [char]10 + '  CMD spawner active every 2s' + [char]10 + '  Title changing every 0.2s' + [char]10 + '  10 mouse patterns running' + [char]10 + '  10 sound loops playing' + [char]10 + [char]10 + 'DAMAGE: ZERO', 'MEMZ Status Board', 'OK', 'Warning')"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 5500;  Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('POPUP COUNT SO FAR' + [char]10 + [char]10 + 'VBScript Loop A: ~5 shown so far' + [char]10 + 'VBScript Loop B: ~5 shown so far' + [char]10 + 'mshta alerts: 15 fired' + [char]10 + 'PowerShell: 2 so far' + [char]10 + 'Balloons: 3 so far' + [char]10 + [char]10 + 'Total so far: ~30+ popups' + [char]10 + 'And counting.', 'MEMZ Counter', 'OK', 'Information')"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 9000;  Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('MOUSE PATTERN REPORT' + [char]10 + [char]10 + 'Wave 1: 800 random positions DONE' + [char]10 + 'Wave 2: 25 circle rounds RUNNING' + [char]10 + 'Wave 3: 18 figure-8 rounds RUNNING' + [char]10 + 'Wave 4: corners + edges DONE' + [char]10 + 'Wave 5: outward spiral QUEUED 8s' + [char]10 + 'Wave 6-10: all still queued' + [char]10 + [char]10 + 'Mouse total moves: 2000+ already', 'MEMZ Mouse Tracker', 'OK', 'Warning')"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 13000; Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('TITLE BAR CHECK' + [char]10 + [char]10 + 'Your title bar has shown 65 different' + [char]10 + 'messages since chaos started.' + [char]10 + [char]10 + 'At 0.2 seconds each, cycling through' + [char]10 + '30 unique messages on repeat.' + [char]10 + [char]10 + 'Check the taskbar. Go on. Look.', 'MEMZ Title Dept', 'OK', 'Information')"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 17000; Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('BREAKING NEWS' + [char]10 + [char]10 + 'Batch file refuses to run out of chaos.' + [char]10 + [char]10 + 'New CMD window appeared 12 seconds ago.' + [char]10 + 'Another one 14 seconds ago.' + [char]10 + 'More are scheduled.' + [char]10 + [char]10 + 'PC confirmed fine. Chaos confirmed maximum.', 'MEMZ News Network', 'OK', 'Exclamation')"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 21000; Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('SOUND REPORT' + [char]10 + [char]10 + 'Sound loops active: 10' + [char]10 + 'Types: random beeps, chords, alarms,' + [char]10 + '       system sounds, ascending scales,' + [char]10 + '       descending sequences, imperial march' + [char]10 + [char]10 + 'Damage to speakers: none' + [char]10 + 'Annoyance level: maximum', 'MEMZ Audio Report', 'OK', 'Information')"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 26000; Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('HALFWAY REPORT' + [char]10 + [char]10 + '30 seconds into the everything edition.' + [char]10 + [char]10 + 'Popups seen so far: 60+' + [char]10 + 'Mouse positions moved: 5000+' + [char]10 + 'CMD windows spawned: 10' + [char]10 + 'Sounds played: uncountable' + [char]10 + [char]10 + 'Files deleted: 0' + [char]10 + 'Data stolen: 0' + [char]10 + 'Damage: NONE', 'MEMZ Halfway', 'OK', 'Information')"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 31000; Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('APPRECIATION POST' + [char]10 + [char]10 + 'If you are still clicking through these' + [char]10 + 'you are an absolute legend.' + [char]10 + [char]10 + 'Most people would have closed it by now.' + [char]10 + [char]10 + 'Not you though. Respect.', 'MEMZ Fan Club', 'OK', 'Information')"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 36000; Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('CONCENTRIC CIRCLES' + [char]10 + [char]10 + 'Your mouse is now tracing concentric circles.' + [char]10 + 'Growing larger with each revolution.' + [char]10 + [char]10 + 'It is basically drawing on your screen.' + [char]10 + 'Invisibly. Because it has no pen.' + [char]10 + [char]10 + 'Still completely harmless.', 'MEMZ Art Class', 'OK', 'Information')"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 41000; Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('FINAL STRETCH' + [char]10 + [char]10 + '19 seconds of chaos remaining.' + [char]10 + [char]10 + 'Lissajous curve mouse pattern loading.' + [char]10 + 'More sound waves queued.' + [char]10 + 'More CMD windows coming.' + [char]10 + [char]10 + 'Grand finale popup: 60 seconds.', 'MEMZ Final Stretch', 'OK', 'Warning')"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 47000; Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('LISSAJOUS PATTERN' + [char]10 + [char]10 + 'Your mouse is now tracing a Lissajous curve.' + [char]10 + 'That is the mathematical kind.' + [char]10 + [char]10 + 'We got very advanced with the mouse patterns.' + [char]10 + 'Still zero damage though.', 'MEMZ Math Dept', 'OK', 'Information')"
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 53000; Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('ALMOST THERE' + [char]10 + [char]10 + '7 seconds until the grand finale popup.' + [char]10 + [char]10 + 'The sounds are winding down.' + [char]10 + 'The mouse is on its last wave.' + [char]10 + 'The CMD spawner has fired its last window.' + [char]10 + [char]10 + 'One final popup coming. A big one.', 'MEMZ Almost Done', 'OK', 'Warning')"
+
+:: ---- GRAND FINALE - 60 SECONDS ----
+start /b powershell -WindowStyle Hidden -command "Start-Sleep -m 60000; Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.MessageBox]::Show('MEMZ - THE EVERYTHING EDITION - COMPLETE' + [char]10 + [char]10 + '============= FINAL TALLY =============' + [char]10 + '  Browser tabs opened:          15' + [char]10 + '  Apps launched:                14' + [char]10 + '  CMD windows instant:           6' + [char]10 + '  CMD windows spawned:          15' + [char]10 + '  VBScript Loop A:              30' + [char]10 + '  VBScript Loop B:              30' + [char]10 + '  VBScript individual:          10' + [char]10 + '  mshta browser alerts:         15' + [char]10 + '  PowerShell popups:            13' + [char]10 + '  System tray balloons:         12' + [char]10 + '  Title messages shown:        300+' + [char]10 + '  TOTAL POPUPS:                115+' + [char]10 + '  Mouse patterns:               10' + [char]10 + '  Mouse positions moved:      8000+' + [char]10 + '  Sound loops:                  10' + [char]10 + '  Sounds played:            absurd' + [char]10 + '  Chaos duration:           60 sec' + [char]10 + '======================================' + [char]10 + '  Files deleted:                 0' + [char]10 + '  Data stolen:                  0' + [char]10 + '  System damage:             NONE' + [char]10 + '  Pizzas ordered:                0' + [char]10 + '======================================' + [char]10 + [char]10 + 'You survived 115+ popups. You are a legend.' + [char]10 + 'Close everything whenever you want.' + [char]10 + 'Hope you had the best time :)', 'MEMZ - GRAND FINALE DAMAGE REPORT', 'OK', 'Information')"
+
+:: ============================================================
+::  STATUS SCREEN
+:: ============================================================
+cls
+color 0c
+echo  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+echo  !!!!!!!!!!  MEMZ EVERYTHING EDITION RUNNING  !!!!!!!!!!!!
+echo  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+echo.
+color 0a
+echo  ACTIVE RIGHT NOW (all simultaneously):
+echo    VBScript Loop A          30 sequential always-on-top
+echo    VBScript Loop B          30 sequential always-on-top
+echo    mshta alert bomb         15 fired at once
+echo    CMD window spawner       every 2s for 60 seconds
+echo    Title bar changer        30 msgs every 0.2 seconds
+echo    Mouse wave 1             800 random @ 8ms
+echo    Mouse wave 2             Circle x25 rounds
+echo    Mouse wave 3             Figure-8 x18 rounds
+echo    Sound loop 1             Hand+Exclamation x150
+echo    Sound loop 2             200 random beeps
+echo    Sound loop 3             Alarm seq x30
+echo    Sound loop 4             Asterisk+Question x25
+echo    Sound loop 5             Chord seq x20
+echo    Sound loop 6             200 more random beeps
+echo.
+echo  QUEUED (firing throughout 60 seconds):
+echo    7 more mouse patterns    at 2/8/15/24/33/43/52s
+echo    4 more sound waves       at 10/22/38/52s
+echo    10 VBScript bombs        every 4-5 seconds
+echo    12 PowerShell popups     every 2-3 seconds
+echo    12 system tray balloons  throughout
+echo    15 CMD spawns            every 3-4 seconds
+echo    Grand finale popup       at 60 seconds
+echo.
+color 0e
+echo  TOTAL POPUPS: 115+  ^|  DURATION: 60s  ^|  DAMAGE: ZERO
+echo.
+color 0b
+echo  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+echo   100%% HARMLESS. THE MOST CHAOS IN ONE BATCH FILE EVER.
+echo  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+echo.
+start /b powershell -WindowStyle Hidden -command "[System.Media.SystemSounds]::Question.Play()"
+pause
+
+:: ---- CLEANUP ALL TEMP FILES ----
+del "%temp%\loopA.vbs"  >nul 2>&1
+del "%temp%\loopB.vbs"  >nul 2>&1
+del "%temp%\mpre.vbs"   >nul 2>&1
+del "%temp%\v1.vbs"     >nul 2>&1
+del "%temp%\v2.vbs"     >nul 2>&1
+del "%temp%\v3.vbs"     >nul 2>&1
+del "%temp%\v4.vbs"     >nul 2>&1
+del "%temp%\v5.vbs"     >nul 2>&1
+del "%temp%\v6.vbs"     >nul 2>&1
+del "%temp%\v7.vbs"     >nul 2>&1
+del "%temp%\v8.vbs"     >nul 2>&1
+del "%temp%\v9.vbs"     >nul 2>&1
+del "%temp%\v10.vbs"    >nul 2>&1
